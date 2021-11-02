@@ -1,0 +1,23 @@
+-- YAMAHAルーターで実行するスクリプト
+
+-- コマンド
+rtn, lan1 = rt.command("show status lan1")
+rtn, lan2 = rt.command("show status lan2")
+rtn, pp1 = rt.command("show status pp 1")
+
+-- POSTデータ作成
+req_t = {
+    url = "http://test.lc/rtxlogger/api.php",
+    method = "POST",
+    content_type = "application/x-www-form-urlencoded;charset=sjis"
+}
+req_t.post_text =
+    string.format(
+    "lan1=%s&lan2=%s&pp1=%s",
+    lan1,
+    lan2,
+    pp1,
+)
+
+-- サーバーにPOST
+rt.httprequest(req_t)

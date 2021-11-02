@@ -1,0 +1,16 @@
+ALTER TABLE `traffics` ADD `host` VARCHAR(15) NULL AFTER `id`;
+ALTER TABLE `traffics` ADD `lan1_total_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan1_total_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan1_v4_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan1_v6_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan1_v4_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan1_v6_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_total_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_total_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_v4_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_v6_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_v4_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `lan2_v6_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `pp1_receive` BIGINT NULL;
+ALTER TABLE `traffics` ADD `pp1_send` BIGINT NULL;
+ALTER TABLE `traffics` ADD `update_at` DATETIME NULL;
