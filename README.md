@@ -2,6 +2,8 @@
 
 Get traffic data from Yamaha RTX Router.
 
+https://takabus.com/tips/472/
+
 ## Instration
 
 1.Log in to your router
